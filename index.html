@@ -1,166 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- bootsrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-
-    <!-- My CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
-    <title>My Portofolio | Cikal Haditya Gymnastiar</title>
-  </head>
-  <body id="home">
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm fixed-top"  >
-        <div class="container">
-          <a class="navbar-brand" href="#">Cikal Haditya Gymnastiar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#hobby">Hobby</a>
-              <a class="nav-link" href="#contact">Contact</a>
-            </div>
-          </div>
+</head>
+<body bgcolor="orange">
+    <div>
+         <img src="image/banner.jpg" width="100%" height="200"> 
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="menuMountain('guntur')">Guntur</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('cikurai')">Cikurai</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('semeru')">Semeru</button>
+            <button class="w3-bar-item w3-button" onclick="menuMountain('prau')">Prau</button>
         </div>
-      </nav>
-    <!-- Akhir Navbar -->
-    
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-        <img src="img/WhatsApp Image 2021-11-17 at 13.11.20.jpeg" alt="Cikal Haditya Gymnastiar" width="200" class="rounded-circle img-thumbnail" />
-        <h1 class="display-4">Cikal Haditya Gymnastiar</h1>
-        <p class="lead">Programmer | Mahasiswa</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L26.7,224C53.3,224,107,224,160,218.7C213.3,213,267,203,320,186.7C373.3,171,427,149,480,165.3C533.3,181,587,235,640,245.3C693.3,256,747,224,800,208C853.3,192,907,192,960,186.7C1013.3,181,1067,171,1120,181.3C1173.3,192,1227,224,1280,213.3C1333.3,203,1387,149,1413,122.7L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center fs-5 text-center" >
-                <div class="col-md-4">
-                    <p>Hallo perkenalkan nama saya Cikal Haditya Gymnastiar. nama panggilan saya cikal/adit. Saya adalah seorang mahasiswa semester 1 di Universitas Komputer Indonesia.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Saya sangat senang di dunia programmer karena yang pertama saya dari kecil sering bermain computer dan mempunyai keinginan membuat game/program sendiri.</p>
-                </div>
-            </div>
+        <div id="Home" class="w3-container w3-animate-zoom classMenu">
+            <br><br>
+                <h1><Center>Selamat Datang</h1>
+                <h3><center>PESONA ALAM INDONESIA</h3>
+                <h4><center>Nama : Cikal Haditya Gymnastiar</h4>
+                <h4><center>NIM  : 10121235 </h4>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,64L26.7,80C53.3,96,107,128,160,144C213.3,160,267,160,320,181.3C373.3,203,427,245,480,261.3C533.3,277,587,267,640,250.7C693.3,235,747,213,800,213.3C853.3,213,907,235,960,245.3C1013.3,256,1067,256,1120,229.3C1173.3,203,1227,149,1280,149.3C1333.3,149,1387,203,1413,229.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </section>
-    <!-- Akhir About -->
+        <div id="guntur" class="w3-container classMenu w3-animate-zoom " style="display:none" >
+            <h2>Guntur</h2>
+            <img src="image/guntur.jpg" alt="mountain" width="300" height="180">
+            <p>Gunung Guntur adalah gunung berapi kerucut aktif yang terdapat di Kelurahan Pananjung dan Desa Pasawahan, Tarogong Kaler, Kabupaten Garut, Jawa Barat, dan memiliki ketinggian 2.249 meter dpl.
 
-    <!-- Hobby -->
-    <section id="hobby">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>Hobby</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/1.jpg" class="card-img-top" alt="projects 1">
-                        <div class="card-body">
-                          <p class="card-text">Hobby yang pertama adalah saya sangat suka touring/keliling kota menggunakan motor</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/4.jpg" class="card-img-top" alt="projects 1">
-                        <div class="card-body">
-                          <p class="card-text">Hobby yang kedua adalah saya juga suka bermain game computer/mobile seperti Valorant, Point Blank, PUBG mobile, Mobile Legends</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/5.jpg" class="card-img-top" alt="projects 1">
-                        <div class="card-body">
-                          <p class="card-text">Hobby yang ketiga adalah saya suka bermain billiard disaat mempunyai waktu kosong</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/2.jpg" class="card-img-top" alt="projects 1">
-                        <div class="card-body">
-                          <p class="card-text">Hobby yang keempat adalah Futsal, saya dari kecil hingga sekarang senang bermainn futsal/bola</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/3.jpg" class="card-img-top" alt="projects 1">
-                        <div class="card-body">
-                          <p class="card-text">Hobby yang kelima saya senang melihat/mempunyai mobil bmw yang di modification seperti di gambar dan semoga saya bisa mempunyai mobil yang seperti di gambar</p>
-                        </div>
-                      </div>
-                </div>
-            </div>
+                Gunung Guntur pernah menjadi gunung berapi paling aktif di Pulau Jawa pada dekade 1800-an. Namun, sejak itu aktivitasnya kembali menurun. Erupsinya pada umumnya disertai dengan lelehan lava, lapili dan objek material lainnya. Erupsi Gunung Guntur yang tercatat adalah pada tahun 1847, 1843, 1841, 1840, 1836, 1834-35, 1833, 1832, 1832, 1829, 1828, 1827, 1825, 1818, 1816, 1815, 1809, 1807, 1803, 1800, 1780, 1777, 1690.
+                
+                Gunung Guntur berdekatan dengan gunung-gunung lainya yang mengelilingi kota Garut. Di sebelah selatan Gunung Guntur, ada Gunung Putri yang berhadapan dengan Gunung Cikuray dan Gunung Papandayan, kemudian di sebelah barat ada Gunung Masigit, Gunung Parupuyan, dan gunung lainnya. Di sekitar kaki Gunung Guntur tepatnya di daerah Kecamatan Tarogong Kaler ada banyak hotel dan penginapan dengan dilengkapi fasilitas pemandian air panas yang sumber air panasnya didapatkan dari Gunung Guntur.</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L26.7,234.7C53.3,245,107,267,160,245.3C213.3,224,267,160,320,154.7C373.3,149,427,203,480,213.3C533.3,224,587,192,640,181.3C693.3,171,747,181,800,186.7C853.3,192,907,192,960,186.7C1013.3,181,1067,171,1120,154.7C1173.3,139,1227,117,1280,128C1333.3,139,1387,181,1413,202.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </section>
-    <!-- Akhir Hobby -->
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Nama Lengkap</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="name">
-                        </div>
-                          <div class="mb-3">
-                          <label for="email" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-success">Kirim</button>
-                      </form>
-                </div>
-            </div>
+        <div id="cikurai" class="w3-container classMenu w3-animate-fading" style="display:none">
+            <h2>Cikurai</h2>
+            <img src="image/cikurai.jpg" alt="mountain" width="300" height="180">
+            <p>Gunung Cikuray atau Cikurai adalah sebuah gunung bertipe Stratovolcano yang terletak di Dayeuhmanggung, Kabupaten Garut, Jawa Barat, Indonesia. Gunung Cikuray yang mempunyai ketinggian 2.821 meter di atas permukaan laut ini tidak mempunyai kawah aktif dan merupakan gunung tertinggi keempat di Jawa Barat setelah Gunung Ciremai, Gunung Pangrango dan Gunung Gede. Gunung ini berada di perbatasan kecamatan Bayongbong dari sini bisa naik melalui jalur Cilegug atau kampung Jambansari dekat markas HdG Team, Cikajang, Kiara Janggot dan Dayeuhmanggung. Iklim di daerah Gunung Cikuray dan sekitarnya dikategorikan sebagai daerah beriklim tropis basah (humid tropical climate). Curah hujan di sekitar Gunung Cikuray mencapai 3500-4000mm dengan kalkulasi bulan basah 9 bulan dan bulan kering 3 bulan dan juga variasi temperatur dari 10º C hingga 24º C.</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,160L26.7,165.3C53.3,171,107,181,160,181.3C213.3,181,267,171,320,186.7C373.3,203,427,245,480,234.7C533.3,224,587,160,640,149.3C693.3,139,747,181,800,202.7C853.3,224,907,224,960,224C1013.3,224,1067,224,1120,229.3C1173.3,235,1227,245,1280,218.7C1333.3,192,1387,128,1413,96L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-    </section>
-    <!-- Akhir Contact -->
+        <div id="semeru" class="w3-container classMenu w3-animate-top" style="display:none">
+            <h2>Semeru</h2>
+            <img src="image/semeru.jpg" alt="mountains" width="300" height="180" morales>
+            <p>Gunung Semeru atau Gunung Meru adalah sebuah gunung berapi kerucut di Jawa Timur, Indonesia. Gunung Semeru merupakan gunung tertinggi di Pulau Jawa, dengan puncaknya Mahameru, 3.676 meter dari permukaan laut (mdpl). Gunung ini terbentuk akibat subduksi Lempeng Indo-Australia kebawah Lempeng Eurasia. Gunung Semeru juga merupakan gunung berapi tertinggi ketiga di Indonesia setelah Gunung Kerinci di Sumatra dan Gunung Rinjani di Nusa Tenggara Barat.[2] Kawah di puncak Gunung Semeru dikenal dengan nama Jonggring Saloko.
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-        <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/hadityacikal" class="text-white fw-bold">Cikal Haditya Gymnastiar</a></p>
-    </footer>
-    <!-- Akhir Footer -->
+                Gunung Semeru secara administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten Malang dan Kabupaten Lumajang, Provinsi Jawa Timur. Gunung ini termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru. Semeru mempunyai kawasan hutan Dipterokarp Bukit, hutan Dipterokarp Atas, hutan Montane, dan Hutan Ericaceous atau hutan gunung. Posisi geografis Semeru terletak antara 8°06' LS dan 112°55' BT.
+                
+                Pada tahun 1913 dan 1946 Kawah Jonggring Saloka memiliki kubah dengan ketinggian 3.744,8 m hingga akhir November 1973. Di sebelah selatan, kubah ini mendobrak tepi kawah menyebabkan aliran lava mengarah ke sisi selatan meliputi daerah Pronojiwo dan Candipuro di Lumajang.</p>
+        </div>
+        <div id="prau" class="w3-container classMenu w3-animate-bottom" style="display:none">
+            <h2>Prau</h2>
+            <img src="image/prau.jpg" alt="mountain" width="300" height="180">
+            <p>Gunung Prahu (terkadang dieja Gunung Prau) (2.590 mdpl) terletak di kawasan Dataran Tinggi Dieng, Jawa Tengah, Indonesia. Gunung Prahu terletak pada koordinat 7°11′13″S 109°55′22″E. Gunung Prahu merupakan tapal batas antara empat kabupaten yaitu Kabupaten Batang, Kabupaten Kendal, Kabupaten Temanggung dan Kabupaten Wonosobo.
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+                Puncak Gunung Prahu merupakan padang rumput luas yang memanjang dari barat ke timur. Bukit-bukit kecil dan sabana dengan sedikit pepohonan dapat kita jumpai di puncak. Gunung Prahu merupakan puncak tertinggi di kawasan Dataran Tinggi Dieng, dengan beberapa puncak yang lebih rendah di sekitarnya, antara lain Gunung Sipandu, Gunung Pangamun-amun, dan Gunung Juranggrawah.
+                
+                Gunung ini sekarang menjadi salah satu tujuan wisata utama pada kawasan wisata Dieng sebagai wisata alam.</p>
+        </div>
+    </div>
+    <script>
+        function menuMountain(namakarakter) {
+         var i;
+         var x = document.getElementsByClassName("classMenu");
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+         document.getElementById(namakarakter).style.display = "block";
+        }
+    </script>
+</body>
 </html>
